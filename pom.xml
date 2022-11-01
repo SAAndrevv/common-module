@@ -157,6 +157,9 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>checkstyle-validate-sources</id>
@@ -167,6 +170,9 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>pmd</id>
