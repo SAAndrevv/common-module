@@ -41,6 +41,7 @@
         <guava.version>29.0-jre</guava.version>
         <lombok.version>1.18.22</lombok.version>
         <springboot.test.version>2.1.2.RELEASE</springboot.test.version>
+        <spring-cloud.version>2020.0.3</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
