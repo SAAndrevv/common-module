@@ -1,5 +1,6 @@
 package liga.medical.commonmodule.dto.entity;
 
+import liga.medical.commonmodule.dto.enums.SystemType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +18,8 @@ public class DBDebugLog {
     private String id;
 
     @Column(name = "system_type_id")
-    private String systemTypeId;
+    @Enumerated(EnumType.STRING)
+    private SystemType systemTypeId;
 
     @Column(name = "method_params")
     private String methodParams;

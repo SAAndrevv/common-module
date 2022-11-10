@@ -18,7 +18,8 @@ public class DBExceptionLog {
     private String id;
 
     @Column(name = "system_type_id")
-    private String systemTypeId;
+    @Enumerated(EnumType.STRING)
+    private SystemType systemTypeId;
 
     @Column(name = "method_params")
     private String methodParams;
